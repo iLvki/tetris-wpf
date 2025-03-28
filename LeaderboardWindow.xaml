@@ -1,0 +1,19 @@
+﻿<Window x:Class="tetris_nowy.LeaderboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tetris_nowy"
+        mc:Ignorable="d"
+        Title="LeaderboardWindow" Height="450" Width="800">
+    <Grid Background="Beige" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label Content="Leaderboard" HorizontalContentAlignment="Center" Foreground="#895129" VerticalContentAlignment="Center" FontSize="26" FontWeight="Bold" Grid.Row="0" />
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" Grid.Row="1" Height="360">
+            <TextBlock x:Name="LeaderboardTextBlock" TextWrapping="WrapWithOverflow" Text="" Foreground="#895129" HorizontalAlignment="Center" FontSize="26" FontWeight="Bold"  />
+        </ScrollViewer>
+    </Grid>
+</Window>
